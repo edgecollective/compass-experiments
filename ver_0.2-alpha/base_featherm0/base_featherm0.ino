@@ -241,7 +241,7 @@ if (manager->recvfromAckTimeout((uint8_t *)buf, &len, waitTime, &from)) {  // th
    //u8g2.print("hdng: ");
    //u8g2.print(heading);
    
-   float theta_graph=fmod(degree_diff+180,360);
+   float theta_graph=degree_diff;
 
    
    int dx = round(r*sin(theta_graph*PI/180.));
